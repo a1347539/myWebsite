@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <title>Ivan's Porfolio</title>
+    <link rel="stylesheet" href="./asset/porfolio.css" />
+
+    <script>
+
+      let buildLandguageSkill = () => {
+
+        let str = "";
+
+        const languageSkill = [
+          ["Python", "Coded data structures and trained deep learning model."],
+          ["C#", "Created a tower defense game with the Unity game engine."],
+          ["Java", "Built android applications."],
+          ["HTML", "Dealt with the assignments."]
+        ];
+
+        for (i = 0; i < languageSkill.length; i++) {
+          item = languageSkill[i];
+          str += "<p class=\"item\">" + item[0] + "<ul style=\"padding-left: 2rem; padding-top:0.7rem\">";
+
+              str += "<li>" + item[1] + "</li>";
+            
+          str += "</ul>";
+        }
+
+        return str;
+      }
+    </script>
+  </head>
+  <body>
+    <nav id="top">
+      <span>
+        <a href="index.html">Ivan's Page</a>
+      </span>
+
+      <div style="float: right">
+        <a href="porfolio.html">Porfolio</a>
+        <a href="hobbies.html">Hobbies</a>
+      </div>
+    </nav>
+
+    <section id="intro">
+      <div id="poem">
+        <img
+          src="./image/ride_horse.jpg"
+          alt="ride_horse"
+          width="400"
+          height="240"
+          style="padding-top: 1rem;"
+        />
+        <p>MyLife</p>
+        <p id="content">
+          Live! Laugh! Love! Reimagine! </br>
+          Reinvent! Reengage! Seek Truth. </br>
+          Live Boldly. Create Beauty. Dare to Dream. </br>
+          Act for Impact. Steady as We Goes.
+        </p>
+      </div>
+    </section>
+
+    <div class="border">
+
+    <section id="info">
+      <div class="cell" >
+        <h1>Who am I?</h1>
+        <p>Hello, I am Li Chun tak, Ivan. I am interested in solving as well as creating problems. </br>
+        I live in Hong Kong. If you are also a hongkonger and want to hang out, </br>
+        send me an email at this <a href="mailto:1347539@gamil.com" target="_blank">address</a>.
+
+        </p>
+      </div>
+
+      <div class="cell">
+        <h1>Skill Set</h1>
+          <div>
+          <h3>Programming languages</h3>
+            <div id="allitem">
+              <script>
+                allitem.innerHTML = buildLandguageSkill();
+              </script>
+            </div>
+          </div>
+      </div>
+
+      <div class="cell">
+
+      <h1>Educational background and onward</h1>
+        <table width=95% >
+          <tr align="right">
+            <td> 9/2021 ~ </td> <td> Bachelor Degree in Computer Science </td> <td><a href="https://hkust.edu.hk/home" blank="_blank"> The Hong Kong University of Science and Technology </a></td>
+          </tr>
+          <tr align="right">
+            <td> 2019 - 2021 </td> <td> Associate Degree in Computer Science </td> <td> <a href="https://hkuspace.hku.hk/" target="_blank"> HKU School of Professional and Continuing Education </a></td>
+          </tr>
+          <tr align="right">
+            <td> 2018 - 2019 </td> <td> Diploma Yi Jin </td> <td> <a href="https://www.sce.hkbu.edu.hk/en/" target="_blank"> School of Continuing Education Hong Kong Baptist University </a></td>
+          </tr>
+          <tr align="right">
+            <td width="15%"> ~ 6/2016 </td> <td> British Columnbia Certificate of Graduation </td> <td> <a href="https://css.sd79.bc.ca/" target="_blank">Cowichan Secondary School </a></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="cell">
+        <h1>Achievements</h1>
+        <div style="float: right; padding: 1rem 4rem 0;">
+        <img src="./image/achievement.png" alt="achievement" width="340" height="130" >
+        </br><small>My proudest achievement!</small>
+        </div>
+        <ul id="achievementlist">
+          <li><b>Sekiro: Shadow dies twice</b> 100% unlocked!</li>
+          <li><b>Dark souls 3</b> 100% unlocked and NG+7 completed</li>
+          <li>Bronze medalist in my highschool <b>League of Legend</b> tournament.</li>
+          <li>Lost 70% of my savings in stock trading.</li>
+          <li><b>Honor Roll</b> exclusive college award.</li>
+          <li>An overall <b>score of 7.5</b> in the IELTS exam.</li>
+          <li>Obtained a <b>CGPA of 3.98</b> by the end of semester 3.</li>
+          <li><b>Created an actual game</b> without using any major game engine.</li>
+          <li>Awarded the <b>Outstanding Performance Scholarship</b></li>
+        </ul>
+      </div>
+    </section>
+    
+    <div align="center">
+      <a href="index.html"><button class="homebutton">Home</button></a>
+    </div>
+    </div>
+  </body>
+</html>

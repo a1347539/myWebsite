@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>Welcome to Ivan's Page</title>
+    <link rel="stylesheet" href="./asset/index.css" />
+    <script>
+      let changeArrow = (state, obj) => {
+        if (state) {
+          obj.childNodes[0].innerHTML="&#10137;";
+        }
+        else {
+          obj.childNodes[0].innerHTML="&#10138;";
+        }
+      }
+
+      let getAlert = () => {
+        alert("Congratulation, you exist!");
+      }
+    </script>
+  </head>
+
+  <body>
+    <nav id="top">
+      <span>
+        <a href="#">Ivan's Page</a>
+      </span>
+
+      <div style="float: right">
+        <a href="porfolio.html">Porfolio</a>
+        <a href="hobbies.html">Hobbies</a>
+      </div>
+    </nav>
+
+    <section id="third">
+      <div id="icon">
+        <img src="./image/figure.png" alt="sun" width="40rem" height="50rem">
+      </div>
+
+      <div>
+        <div id="welcome">
+          <p id="header">Welcome to Ivan's Home</p></br></br>
+          <p id="subtext">Enjoy your stay!</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="https://github.com/a1347539" target="_blank"><button onmouseover="changeArrow(true, this);" onmouseout="changeArrow(false, this);"><i>&#10138;</i><span style="padding:0 0.5rem;">My GitHub</span></button></a>
+
+        <a href="https://www.instagram.com/li_chun_tak/" target="_blank"><button onmouseover="changeArrow(true, this);" onmouseout="changeArrow(false, this);"><i>&#10138;</i><span style="padding:0 0.5rem;">My Instagram</span></button></a>
+
+        <a href="https://jovian.ai/1347539/notebooks" target="_blank"><button onmouseover="changeArrow(true, this);" onmouseout="changeArrow(false, this);"><i>&#10138;</i><span style="padding:0 0.5rem;">My Jovian</span></button></a>
+      </nav>
+
+      <div id="studies">
+        <table border="1" cellspacing="0" cellpadding="0">
+          <tr>
+            <th style="background-color: rgb(47, 61, 61);" onclick="getAlert()">Food</th>
+            <th style="background-color: rgb(34, 54, 54);" onclick="getAlert()">Mathematic</th>
+            <th style="background-color: rgb(24, 77, 77);" onclick="getAlert()">Video Game</th>
+            <td></td>
+          </tr>
+          <tr>
+            <td colspan="3"></td>
+            <th style="background-color: rgb(61, 80, 80); text-align: left;" onclick="getAlert()">Sport</th>
+            <th style="background-color: rgb(59, 70, 70); text-align: left;" onclick="getAlert()">Computer Science</th>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section id="fourth">
+      <div>
+        <h1 style="margin: 0.3rem;">Hello!</h1>
+        <p>Click to find out more about me.</p>
+      </div>
+
+      <div id="direct">
+        <a href="porfolio.html"><button>My Porfolio</button></a>
+        <a href="hobbies.html"><button>My Hobbies</button></a>
+      </div>
+    </section>
+
+    </section>
+  </body>
+</html>

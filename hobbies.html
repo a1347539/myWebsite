@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <title>Ivan's Hobbies</title>
+    <link rel="stylesheet" href="./asset/hobbies.css" />
+    <script>
+      const allGalleries = new Array(new Array(), new Array());
+
+      const prefix = "./image/hobbies/";
+      const suffix = ".jpeg";
+
+      function imgSet(fImg, sImg, category, size) {
+        this.fImg = fImg;
+        this.sImg = sImg;
+        this.category = category;
+        this.size = size;
+        this.imgs = new Array();
+        let next = false;
+        this.index = Math.floor(Math.random() * 5);
+
+        this.getImages = () => {
+          for (i = 0; i < size; i++) {
+            let temp = new Image();
+            temp.src = prefix + category + "_" + i + suffix;
+            this.imgs.push(temp);
+          }
+        };
+
+        this.frameController = () => {
+          this.animate();
+        };
+
+        this.animate = () => {
+          if (this.index == this.imgs.length) {
+            this.index = 0;
+          }
+          if (this.next) {
+            getTransparent(this.sImg, 1);
+            getOpaque(this.fImg, 1);
+            this.fImg.src = this.imgs[this.index++].src;
+            this.fImg.style.zIndex = 0;
+            this.sImg.style.zIndex = 1;
+            this.next = !this.next;
+          } else if (!this.next) {
+            getTransparent(this.fImg, 1);
+            getOpaque(this.sImg, 1);
+            this.sImg.src = this.imgs[this.index++].src;
+            this.sImg.style.zIndex = 0;
+            this.fImg.style.zIndex = 1;
+            this.next = !this.next;
+          }
+          setTimeout(() => {
+            this.animate();}
+          , 3000);
+        }
+      }
+
+      function getTransparent(img, opacity) {
+        if (opacity > 0) {
+          img.style.opacity = opacity;
+          setTimeout(function () {
+            getTransparent(img, opacity - 0.01);
+          }, 10);
+        }
+      }
+
+      function getOpaque(img, opacity) {
+        img.style.opacity = 1;
+      }
+
+      let changeImage = () => {};
+    </script>
+  </head>
+  <body>
+    <nav id="top">
+      <span>
+        <a href="index.html">Ivan's Page</a>
+      </span>
+
+      <div style="float: right">
+        <a href="porfolio.html">Porfolio</a>
+        <a href="">Hobbies</a>
+      </div>
+    </nav>
+    <div style="text-align:center;background-color: rgb(192, 192, 192); padding:0.1rem 0;"><h1>My Hobbies</h1></div>
+
+    <section style="width:auto;height:38rem; background-color: rgb(139, 139, 139);">
+      <div class="RFrame">
+        <div id="Gallery">
+          <img id="ffF" src="" alt="" style="position: absolute" />
+          <img id="sfF" src="" alt="" style="position: absolute" />
+          <script>
+            thisSet = new imgSet(ffF, sfF, 0, 5)
+            thisSet.getImages();
+            thisSet.frameController();
+          </script>
+        </div>
+        <div style="text-align: right; margin-right: 1rem; margin-top: 0.1rem;">
+          <i>- Hong Kong's land and water</i>
+        </div>
+      </div>
+      
+      <div style="padding-top: 14rem; padding-left: 8rem">
+        <p>
+          <b>Photography</b></br></br>
+          &nbsp;I have been to a couple of countries. </br>
+          &nbsp;And have taken many photos along the way!
+        </p>
+        <p style="padding-top: 4.4rem; padding-left: 5rem">
+          <i>"If you can dream it, </br>
+          you can do it."</br></br>
+          <span style="padding-left: 9rem;">
+          - Walt Disney
+          </span></i>
+        </p>
+      </div>
+    </section>
+
+    <section style="width:auto;height:38rem; background-color: rgb(139, 139, 139);">
+      <div class="LFrame">
+        <div id="Gallery">
+          <img id="fsF" src="" alt="" style="position: absolute" />
+          <img id="ssF" src="" alt="" style="position: absolute" />
+          <script>
+            thisSet = new imgSet(fsF, ssF, 1, 5)
+            thisSet.getImages();
+            thisSet.frameController();
+          </script>
+        </div>
+        <div style="text-align: right; margin-right: 1rem; margin-top: 0.1rem;">
+          <i>- Hong Kong's Food</i>
+        </div>
+      </div>
+
+      <div style="float:right; padding-right: 8rem; padding-top: 14rem;">
+        <p>
+        <b>Cuisine</b></br></br>
+        &nbsp;I will try to make myself</br>
+        &nbsp;a real dinner someday.</br>
+        &nbsp;But for now, instant noodle it is.
+        </p>
+        <p style="padding-top: 4.4rem; padding-left: 8rem">
+          <i>"Because I can!</br></br>
+          <span style="padding-left: 9rem;">
+          - Me
+          </span></i>
+        </p>
+      </div>
+      
+    </section>
+
+    <div style="clear:both"></div>
+    <section  style="text-align: center;">
+      <div style="padding:2rem 0rem;">
+        <p>
+        <b>Video Game</b></br></br>
+        &nbsp;A used-to-be master in Soul's games, what else do I need to say?</br>
+        </p>
+      </div>
+      <div id="video">
+        <img src="./image/hobbies/sekiro.jpg" alt="" width="60%" title="sekiro" >
+      </div>
+    </section>
+
+    <div style="text-align: center; padding: 7rem 0rem">
+      <a href="index.html"><button class="homebutton">Home</button></a>
+      <p><small>Come back anytime.</span></p>
+    </div>
+  </body>
+</html>

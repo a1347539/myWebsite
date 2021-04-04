@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(204, 204, 204);
+}
+
+.border {
+  border-left: 3rem solid rgb(160, 160, 160);
+  border-right: 3rem solid rgb(160, 160, 160);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+}
+
+nav#top {
+  background-color: rgb(70, 70, 70);
+  padding: 2rem 2rem 1.4rem;
+  z-index: 5;
+}
+
+nav#top a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  padding: 0rem 1rem;
+  font-size: 1.1rem;
+}
+
+nav#top a:hover {
+  color: rgb(122, 114, 114);
+}
+
+section#intro {
+  background-color: rgb(73, 73, 73);
+  color: rgb(255, 255, 255);
+  width: auto;
+  height: 20rem;
+}
+
+section#intro div#poem {
+  padding: 1rem 6rem;
+}
+
+section#intro div#poem p {
+  padding-top: 1.5rem;
+  font-size: 3.5rem;
+}
+
+section#intro div#poem p#content {
+  padding: 1.8rem 2rem;
+  font-size: 1.2rem;
+}
+
+section#intro div#poem img {
+  float: right;
+}
+
+section#info {
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
+
+section#info div.cell {
+  margin-bottom: 3rem;
+}
+
+section#info h1 {
+  padding-left: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+section#info table td {
+  padding: 0.5rem 1rem;
+}
+
+section#info table td a {
+  text-decoration: none;
+  color: black;
+}
+
+section#info table td a:hover {
+  color: gray;
+}
+
+.item {
+  padding-left: 0.2rem;
+  padding-top: 0.7rem;
+}
+
+.homebutton {
+  font-family: "Courier New", Courier, monospace;
+  display: inline-block;
+  margin: 1rem 0rem 5rem;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 1.2em;
+  text-decoration: none;
+  transition: all 0.6s;
+  text-decoration: none;
+}
+
+.homebutton:hover {
+  color: #000000;
+  background-color: #9b9b9b;
+}
+
+#achievementlist li {
+  padding: 0.2rem;
+}
