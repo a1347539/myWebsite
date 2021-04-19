@@ -2,6 +2,8 @@
   <head>
     <title>Welcome to Ivan's Page</title>
     <link rel="stylesheet" href="./asset/index.css" />
+    <link rel="stylesheet" href="./asset/general.css" />
+    <script src="./asset/general.js"></script>
     <script>
       let changeArrow = (state, obj) => {
         if (state) {
@@ -18,15 +20,16 @@
     </script>
   </head>
 
-  <body>
+  <body onload="getClock()">
     <nav id="top">
       <span>
-        <a href="#">Ivan's Page</a>
+        <a href="index.html">Ivan's Page</a>
       </span>
 
       <div style="float: right">
         <a href="porfolio.html">Porfolio</a>
         <a href="hobbies.html">Hobbies</a>
+        <a href="showCase.html">Show Case</a>
       </div>
     </nav>
 
@@ -80,5 +83,11 @@
     </section>
 
     </section>
+    <footer>
+      <div>
+        <p>The current Time is <span id="clock"></span></p>
+        <p>Made by <span style="color: rgb(72, 255, 96)">Li Chun Tak</span></p>
+      </div>
+    </footer>
   </body>
 </html>

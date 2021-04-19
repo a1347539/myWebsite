@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <title>Welcome to RBPS Limited</title>
+    <link rel="stylesheet" href="asset/css/mainPage.css" />
+    <link rel="stylesheet" href="asset/css/general.css" />
+    <link rel="stylesheet" href="asset/css/productCatalog.css" />
+    <script src="asset/js/general.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+      let changeSelectedName = (obj) => {
+        $("#selected").html("Baby " + $(obj).html());
+      };
+    </script>
+  </head>
+  <body onload="getClock()">
+    <nav id="top">
+      <span style="margin-left: 3rem">
+        <a href="mainPage.html">RBPS LTD.</a>
+      </span>
+
+      <div style="float: right; margin-right: 2rem">
+        <a href="productCatalog.html">Product</a>
+        <a href="game.html">Game</a>
+        <a href="#" onclick="checkPassword()">myResume</a>
+      </div>
+    </nav>
+    
+    <div class="divider" style="background-color: rgb(255, 104, 247)"></div>
+
+    <div class="floatMessage">
+      <p><h3>Find Us At</h3></p>
+      <a href="https://www.amazon.com/"
+        ><img src="./asset/image/contact/amazon.png" alt="" width="18rem"
+      /></a>
+      <a href="https://www.instagram.com/"
+        ><img src="./asset/image/contact/instagram.png" alt="" width="18rem"
+      /></a>
+      <a href="https://web.whatsapp.com/"
+        ><img src="./asset/image/contact/whatsapp.png" alt="" width="18rem"
+      /></a>
+      <p style="font-size: 0.6rem; margin-top: 0.3rem;">Contact Number</br>6098 4246</p>
+    </div>
+
+    <div id="selector">
+      <div style="display: inline-block; margin-left: 3rem">
+        <p id="selected" style="color: rgb(255, 166, 0);"></p>
+      </div>
+      <div style="float: right">
+        <a
+          href="babyCare.html"
+          target="content"
+          onClick="changeSelectedName(this)"
+          >Care</a
+        >
+        <a
+          href="babyFood.html"
+          target="content"
+          onClick="changeSelectedName(this)"
+          >Food</a
+        >
+        <a
+          href="babyToy.html"
+          target="content"
+          onClick="changeSelectedName(this)"
+          >Toy</a
+        >
+      </div>
+    </div>
+    <script>
+      type = localStorage.getItem("defaultType")
+      var link;
+      if (type == "0") {
+        link = "babyCare.html";
+        typeName = "Baby Care";
+      }
+      else if (type == "1") {
+        link = "babyFood.html";
+        typeName = "Baby Food";
+      }
+      else {
+        link = "babyToy.html";
+        typeName = "Baby Toy";
+      }
+      $(document).ready(() => {
+        $("#frame #iFrame").attr("src", link);
+        $("#selected").html(typeName);
+      })
+    </script>
+    <div id="frame">
+      <iframe
+        id="iFrame"
+        name="content"
+        width="80%"
+
+        src="babyCare.html"
+        frameborder="0"
+        scrolling="yes"
+        onload="resizeIframe(this);"
+      >
+      </iframe>
+    </div>
+
+    <div class="divider" style="background-color: rgb(255, 104, 247)"></div>
+
+    <footer>
+      <div>
+        <p>The current Time is <span id="clock"></span></p>
+        <p>Made by <span style="color: rgb(72, 255, 96)">Li Chun Tak</span></p>
+        <p style="color: brown">RBPS LTD.</p>
+      </div>
+    </footer>
+  </body>
+</html>

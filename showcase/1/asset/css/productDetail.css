@@ -1,0 +1,30 @@
+p {
+  margin-top: 1rem;
+  margin-left: 0.4rem;
+}
+
+hr {
+  margin-top: 2rem;
+  border: 1px solid rgba(145, 145, 145, 0.3);
+}
+
+ul {
+  margin-left: 1.6rem;
+}
+
+li {
+  margin-top: 0.4rem;
+}
+
+.imgFrame {
+  position: absolute;
+  float: left;
+  width: 20rem;
+  height: 480px;
+}
+
+#sF,
+#fF {
+  max-width: 100%;
+  max-height: 80%;
+}

@@ -1,0 +1,40 @@
+#scoreBoard {
+  position: absolute;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 2.5rem 4rem;
+  padding: 0rem 1rem;
+
+  width: 15%;
+  background-color: rgba(173, 245, 255, 0.3);
+}
+
+#scoreBoard p {
+  margin: 0.3rem 0rem;
+}
+
+canvas {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+  border: 1px solid blue;
+}
+
+#instruction {
+  position: absolute;
+  padding: 3rem 5rem;
+  margin: 2rem 0 2rem 4rem;
+  width: 30rem;
+}
+
+#instruction p {
+  margin-bottom: 0.6rem;
+}
+
+.btn {
+  background-color: rgb(86, 184, 184);
+  border: none;
+  color: aliceblue;
+  font-size: 1.5rem;
+  padding: 0.4rem 2rem;
+  cursor: pointer;
+}

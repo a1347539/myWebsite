@@ -1,4 +1,0 @@
-# myWebsite
-
-hello
-world

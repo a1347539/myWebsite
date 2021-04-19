@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./asset/css/productDetail.css" />
+    <link rel="stylesheet" href="./asset/css/general.css" />
+    <script src="asset/js/products.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="asset/js/productDetail.js"></script>
+  </head>
+  <body style="background-color: rgb(254, 255, 247)">
+    <div style="padding: 1rem; background-color: rgb(116, 255, 255)"></div>
+    <div style="margin: 0rem 2rem; background-color: white; padding: 1.5rem 0;">
+
+      <div class="imgFrame" id="frame1">
+        <img id="fF"/>
+        
+      </div>
+      <div class="imgFrame" id="frame2" onmouseover="stayImg(this)" onmouseout="changeImg(this)">
+        <img id="sF"/>
+      </div>
+      <div style="margin-left: 22rem">
+        <h1 id="name"></h1>
+        <hr />
+        <p>
+          <span style="color: rgb(119, 119, 118)">Price: </span>
+          <span id="price" style="color: red"></span>
+        </p>
+        <hr />
+        <p>
+          <span style="font-size: 1.3rem"><b>About this item</b></span>
+          <div><ul id=description></ul></div>
+        </p>
+      </div>
+    </div>
+    <footer style="padding: 0.5rem 0 0.6rem 0;">
+      <div>
+        <p>Made by <span style="color: rgb(72, 255, 96);">Li Chun Tak</span></p>
+        <p style="color: brown;">RBPS LTD.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,7 +1,9 @@
 <html>
   <head>
-    <title>Ivan's Hobbies</title>
+    <title>My Hobbies</title>
     <link rel="stylesheet" href="./asset/hobbies.css" />
+    <link rel="stylesheet" href="./asset/general.css" />
+    <script src="asset/general.js"></script>
     <script>
       const allGalleries = new Array(new Array(), new Array());
 
@@ -70,7 +72,7 @@
       let changeImage = () => {};
     </script>
   </head>
-  <body>
+  <body onload="getClock()">
     <nav id="top">
       <span>
         <a href="index.html">Ivan's Page</a>
@@ -78,7 +80,8 @@
 
       <div style="float: right">
         <a href="porfolio.html">Porfolio</a>
-        <a href="">Hobbies</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="showCase.html">Show Case</a>
       </div>
     </nav>
     <div style="text-align:center;background-color: rgb(192, 192, 192); padding:0.1rem 0;"><h1>My Hobbies</h1></div>
@@ -153,11 +156,13 @@
       <div style="padding:2rem 0rem;">
         <p>
         <b>Video Game</b></br></br>
-        &nbsp;A used-to-be master in Soul's games, what else do I need to say?</br>
+        &nbsp;A master in Soul's games, what else do I need to say?</br>
         </p>
       </div>
       <div id="video">
-        <img src="./image/hobbies/sekiro.png" alt="" width="60%" title="sekiro" >
+        <iframe width="85%" height="60%" src="https://www.youtube.com/embed/7oaoGPafSa8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </br><small style="padding-left: 7rem;">- Credit goes to Boss Fight Database</small>
+
       </div>
     </section>
 
@@ -165,5 +170,11 @@
       <a href="index.html"><button class="homebutton">Home</button></a>
       <p><small>Come back anytime.</span></p>
     </div>
+    <footer>
+      <div>
+        <p>The current Time is <span id="clock"></span></p>
+        <p>Made by <span style="color: rgb(72, 255, 96)">Li Chun Tak</span></p>
+      </div>
+    </footer>
   </body>
 </html>

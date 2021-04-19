@@ -1,0 +1,12 @@
+footer {
+  text-align: center;
+  background-color: rgb(61, 61, 61);
+  padding: 1rem 0 2rem 0;
+}
+footer div {
+  color: aliceblue;
+}
+
+footer div p {
+  margin-top: 0.3rem;
+}

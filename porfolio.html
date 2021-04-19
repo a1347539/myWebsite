@@ -1,7 +1,9 @@
 <html>
   <head>
-    <title>Ivan's Porfolio</title>
+    <title>My Porfolio</title>
     <link rel="stylesheet" href="./asset/porfolio.css" />
+    <link rel="stylesheet" href="./asset/general.css" />
+    <script src="./asset/general.js"></script>
 
     <script>
 
@@ -29,7 +31,7 @@
       }
     </script>
   </head>
-  <body>
+  <body onload="getClock()">
     <nav id="top">
       <span>
         <a href="index.html">Ivan's Page</a>
@@ -38,6 +40,7 @@
       <div style="float: right">
         <a href="porfolio.html">Porfolio</a>
         <a href="hobbies.html">Hobbies</a>
+        <a href="showCase.html">Show Case</a>
       </div>
     </nav>
 
@@ -118,7 +121,7 @@
           <li>An overall <b>score of 7.5</b> in the IELTS exam.</li>
           <li>Obtained a <b>CGPA of 3.98</b> by the end of semester 3.</li>
           <li><b>Created an actual game</b> without using any major game engine.</li>
-          <li>Awarded the <b>Outstanding Performance Scholarship</b></li>
+          <li>Awarded the <b>Outstanding Performance Scholarship.</b></li>
         </ul>
       </div>
     </section>
@@ -127,5 +130,11 @@
       <a href="index.html"><button class="homebutton">Home</button></a>
     </div>
     </div>
+    <footer>
+      <div>
+        <p>The current Time is <span id="clock"></span></p>
+        <p>Made by <span style="color: rgb(72, 255, 96)">Li Chun Tak</span></p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <title>Welcome to RBPS Limited</title>
+    <link rel="stylesheet" href="asset/css/general.css" />
+    <link rel="stylesheet" href="asset/css/game.css" />
+    <script src="asset/js/general.js"></script>
+    <script src="asset/js/products.js"></script>
+    <script src="asset/js/game.js"></script>
+    <script src="asset/js/gamePage.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body onload="getClock(); setScore();">
+
+    <nav id="top">
+      <span style="margin-left: 3rem">
+        <a href="mainPage.html">RBPS LTD.</a>
+      </span>
+
+      <div style="float: right; margin-right: 2rem">
+        <a href="productCatalog.html">Product</a>
+        <a href="game.html">Game</a>
+        <a href="#" onclick="checkPassword()">myResume</a>
+      </div>
+    </nav>
+    <div class="divider" style="background-color: rgb(255, 104, 247)"></div>
+
+    <div style="float: right; margin: 1rem 7rem 1rem 0rem;"><img src="./asset/image/game/cover.png" alt="" height="450rem"></div>
+
+    <div class="floatMessage">
+      <p><h3>Find Us At</h3></p>
+      <a href="https://www.amazon.com/"
+        ><img src="./asset/image/contact/amazon.png" alt="" width="18rem"
+      /></a>
+      <a href="https://www.instagram.com/"
+        ><img src="./asset/image/contact/instagram.png" alt="" width="18rem"
+      /></a>
+      <a href="https://web.whatsapp.com/"
+        ><img src="./asset/image/contact/whatsapp.png" alt="" width="18rem"
+      /></a>
+      <p style="font-size: 0.6rem; margin-top: 0.3rem;">Contact Number</br>6098 4246</p>
+    </div>
+
+    <div style="height: 100%">
+      <div id="scoreBoard">
+        <p id="health"></p>
+        <p id="score"></p>
+        <p id="time"></p>
+      </div>
+      <div id="instruction">
+        <p ><h2 style="color: rgb(82, 193, 197);"><b>Dodge It!</b></h2></p>
+        <div style="margin-left: 0.1rem;">
+        <p style="color: rgb(82, 118, 197);">
+          Instruction: Dodge the balls coming from off the screen.
+        </p>
+        <p style="color: rgb(82, 118, 197);">
+          Keys: w(up), s(down), a(right), d(left)
+        </p>
+        <p style="color: rgb(82, 118, 197);">
+          Objective: Earn as many points as possible.
+        </p>
+        <p style="color: rgb(141, 82, 197);">Level Selection:</p>
+
+        <div style="margin-top: 1rem;">
+          <button class="btn" onclick="getLevel(0)">Easy</button>
+          <button class="btn" onclick="getLevel(1)">Hard</button>
+          <button class="btn" onclick="getLevel(2)">Very Hard</button>
+        </div>
+        <div style="margin-top: 1.5rem; margin-left: 0.2rem;">
+          <p style="color: red;font-size: 1.4rem;">Previous score: <span  id="lastScore">
+          </span></p>
+          <p style="color: red;font-size: 1.4rem;">Highest score: <span id="highScore">
+          </span></p>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="divider" style="background-color: rgb(255, 104, 247)"></div>
+    <footer>
+      <div>
+        <p>The current Time is <span id="clock"></span></p>
+        <p>Made by <span style="color: rgb(72, 255, 96)">Li Chun Tak</span></p>
+        <p style="color: brown">RBPS LTD.</p>
+      </div>
+    </footer>
+  </body>
+</html>

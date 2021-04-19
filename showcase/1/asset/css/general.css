@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #c3f6ff;
+  font-size: 17px;
+}
+
+nav#top {
+  background-color: rgb(140, 255, 87);
+  padding: 1rem 0rem;
+  z-index: 5;
+}
+
+nav#top a {
+  text-decoration: none;
+  color: rgb(150, 150, 150);
+  font-weight: bolder;
+  padding: 0rem 0.9rem;
+  font-size: 1.1rem;
+}
+
+nav#top a:hover {
+  color: rgb(122, 114, 114);
+}
+
+.divider {
+  padding: 0.3rem;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(0, 132, 141);
+  padding: 1.7rem 0 2rem 0;
+}
+footer div {
+  color: aliceblue;
+}
+
+footer div p {
+  margin-top: 0.3rem;
+}
+
+.floatMessage {
+  text-align: center;
+  position: fixed;
+  right: 1%;
+  top: 60%;
+  padding: 2rem 4rem;
+  background-color: rgba(220, 255, 220, 0.2);
+  border-radius: 2rem;
+  transition-duration: 0.4s;
+  color: rgba(43, 9, 9, 0.2);
+}
+
+.floatMessage p a {
+  text-decoration: none;
+}
+
+.floatMessage:hover {
+  background-color: rgba(150, 204, 148, 0.7);
+  color: rgb(32, 32, 32);
+}

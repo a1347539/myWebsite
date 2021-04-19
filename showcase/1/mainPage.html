@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <title>Welcome to RBPS Limited</title>
+    <link rel="stylesheet" href="asset/css/mainPage.css" />
+    <link rel="stylesheet" href="asset/css/general.css">
+    <script src="asset/js/mainPage.js"></script>
+    <script src="asset/js/general.js"></script>
+    <script src="asset/js/products.js"></script>
+  </head>
+  <body onload="getClock()">
+    <nav id="top">
+      <span style="margin-left: 3rem">
+        <a href="mainPage.html">RBPS LTD.</a>
+      </span>
+
+      <div style="float: right; margin-right: 2rem">
+        <a href="productCatalog.html">Product</a>
+        <a href="game.html">Game</a>
+        <a href="#" onclick="checkPassword()">myResume</a>
+      </div>
+    </nav>
+
+    <div class="divider" style="background-color: rgb(255, 104, 247);"></div>
+    <div class="bb">
+      <div style="float: right">
+        <img src="./asset/image/1.png" alt="" height="100%" />
+      </div>
+
+      <div id="heading">
+        <img
+          src="./asset/image/company_icon.png"
+          alt=""
+          width="60rem"
+          style="float: left"
+        />
+        <div style="margin-left: 5rem">
+          <h1>Baby and Care</h1>
+          <p style="color: red; padding-top: 0.4rem">Hong Kong</p>
+        </br>
+        </div>
+        <div>
+          <p style="color: rgb(131, 131, 131);">
+            Reliable Baby Product Specialist (RBPS) Company Limited</br>
+            The Baby Product Retail and Wholesale Department
+          </p>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="floatMessage">
+      <p><h3>Find Us At</h3></p>
+      <a href="https://www.amazon.com/"
+        ><img src="./asset/image/contact/amazon.png" alt="" width="18rem"
+      /></a>
+      <a href="https://www.instagram.com/"
+        ><img src="./asset/image/contact/instagram.png" alt="" width="18rem"
+      /></a>
+      <a href="https://web.whatsapp.com/"
+        ><img src="./asset/image/contact/whatsapp.png" alt="" width="18rem"
+      /></a>
+      <p style="font-size: 0.6rem; margin-top: 0.3rem;">Contact Number</br>6098 4246</p>
+    </div>
+
+    <div id="box">
+      <p style="margin: 1rem;">High-tech </br> baby foods <br> products.</p>
+    </div>
+    <div class="divider" style="background-color: rgb(255, 67, 246);"></div>
+    <div style="text-align: center;margin-top: 3rem;color: rgb(12, 192, 36);">
+      <h1>We offer three categories of Baby Product.</h1></br>
+      <h3>There's got to be one you like!</h3>
+    </div>
+    <div id="container">
+      <div class="selectors">
+        <a href="productCatalog.html" onclick="newSite(0)" onmouseover="changeArrow(true, this);" onmouseout="changeArrow(false, this);"><div>
+          <img src="./asset/image/product/1.jpg" alt="" width="160">
+          <h4><i>&#10138;</i><span style="margin-left: 0.4rem;">Baby Porduct</span></h4>
+          <p id="bp">123</p>
+        </div></a>
+        <a href="productCatalog.html" onclick="newSite(1)" onmouseover="changeArrow(true, this);" onmouseout="changeArrow(false, this);"><div>
+          <img src="./asset/image/product/2.jpg" alt="" width="160">
+          <h4><i>&#10138;</i><span style="margin-left: 0.4rem;"></span>Baby Food</span></h4>
+          <p id="bf">123</p>
+        </div></a>
+        <a href="productCatalog.html" onclick="newSite(2)" onmouseover="changeArrow(true, this);" onmouseout="changeArrow(false, this);"><div>
+          <img src="./asset/image/product/3.jpg" alt="" width="160">
+          <h4><i>&#10138;</i><span style="margin-left: 0.4rem;"></span>Baby Toy</span></h4>
+          <p id="bt">123</p>
+        </div></a>
+        <script>
+          suffix = " new item(s)";
+          document.getElementById("bp").innerHTML = dictLength(products[0]) + suffix;
+          document.getElementById("bf").innerHTML = dictLength(products[1]) + suffix;
+          document.getElementById("bt").innerHTML = dictLength(products[2]) + suffix;
+        </script>
+        <script>
+          let newSite = (type) => {
+            localStorage.setItem("defaultType", type);
+          }
+        </script>
+      </div>
+    </div>
+    <div style="text-align: center; color: rgb(0, 255, 76); margin: 1rem 0; font-weight: bold;"><h3>Enjoy your stay!</h3></div>
+    <footer>
+      <div>
+        <p>The current Time is <span id="clock"></span></p>
+        <p>Made by <span style="color: rgb(72, 255, 96);">Li Chun Tak</span></p>
+        <p style="color: brown;">RBPS LTD.</p>
+      </div>
+    </footer>
+  </body>
+</html>

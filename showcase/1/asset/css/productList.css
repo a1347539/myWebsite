@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background: rgb(255, 255, 255);
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.productList {
+  vertical-align: top;
+  border: 1px solid rgb(226, 226, 226);
+  background-color: rgb(255, 255, 255);
+  width: 16rem;
+  height: 20rem;
+  margin: 4rem 4rem 0rem 4rem;
+  display: inline-block;
+}
+
+button {
+  text-decoration: none;
+}
+
+.productList #popout {
+  position: absolute;
+  width: 16rem;
+  padding: 6rem;
+  background-color: rgba(238, 151, 93, 0.3);
+  font-weight: bold;
+  color: red;
+  display: none;
+}
+
+.productList p#name {
+  color: black;
+  margin-top: 1rem;
+}
+
+.productList p#price {
+  color: rgb(255, 0, 0);
+  text-align: right;
+  font-size: large;
+  margin-right: 4rem;
+  margin-top: 1rem;
+}

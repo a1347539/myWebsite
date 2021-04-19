@@ -1,0 +1,63 @@
+div.bb {
+  background: linear-gradient(to left, #ffffff 50%, #97ffae 100%);
+  height: 30rem;
+}
+
+.bb #heading {
+  position: absolute;
+  padding: 10rem 6rem;
+  color: rgb(55, 215, 255);
+}
+
+#box {
+  font-size: large;
+  font-weight: bolder;
+  color: #3a8dad;
+  text-align: center;
+  background-color: rgb(255, 248, 148);
+  width: 15rem;
+  height: 6rem;
+  position: absolute;
+  top: 31rem;
+  margin-left: 5rem;
+}
+
+#container {
+  text-align: center;
+  margin: 4rem 0 3rem 0;
+}
+
+.selectors a {
+  margin: 0 3rem;
+}
+
+.selectors a div {
+  display: inline-block;
+  padding: 2rem;
+  border: 0.5px solid rgba(184, 221, 255, 0.5);
+}
+
+.selectors a div:hover {
+  box-shadow: 0 0.5rem 1.3rem rgba(0, 0, 0, 0.5);
+}
+
+.selectors a div img {
+  border-radius: 20rem;
+}
+
+.selectors a div h4 {
+  color: rgb(224, 51, 51);
+  margin-top: 1rem;
+}
+
+.selectors a div p {
+  color: rgb(252, 164, 164);
+  margin-top: 0.3rem;
+}
+
+.selectors div a {
+  text-decoration: none;
+
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
