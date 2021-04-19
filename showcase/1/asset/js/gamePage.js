@@ -15,7 +15,6 @@ let initCanvas = (difficulty) => {
 
 let setScore = () => {
   lastScore = localStorage.getItem("lastScore");
-  console.log(lastScore);
   if (lastScore != null) {
     document.getElementById("lastScore").innerHTML = lastScore;
   }
