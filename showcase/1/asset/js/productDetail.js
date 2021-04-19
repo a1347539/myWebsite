@@ -75,3 +75,7 @@ let changeImg = (obj) => {
   temp.src = imgArray[nIndex].src;
   timeout = setTimeout(() => animate(), 800);
 };
+
+let getTitle = () => {
+  document.title = product.name;
+};
