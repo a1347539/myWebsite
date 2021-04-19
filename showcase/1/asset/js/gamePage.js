@@ -14,11 +14,13 @@ let initCanvas = (difficulty) => {
 };
 
 let setScore = () => {
-  console.log(123);
-  document.getElementById("lastScore").innerHTML = localStorage.getItem(
-    "lastScore"
-  );
-  document.getElementById("highScore").innerHTML = localStorage.getItem(
-    "highScore"
-  );
+  lastScore = localStorage.getItem("lastScore");
+  console.log(lastScore);
+  if (lastScore != null) {
+    document.getElementById("lastScore").innerHTML = lastScore;
+  }
+  highScore = localStorage.getItem("highScore");
+  if (highScore != null) {
+    document.getElementById("highScore").innerHTML = highScore;
+  }
 };
