@@ -78,6 +78,7 @@ section#info h1 {
 
 section#info table td {
   padding: 0.5rem 1rem;
+  text-align: right;
 }
 
 section#info table td a {
@@ -91,7 +92,7 @@ section#info table td a:hover {
 
 .item {
   padding-left: 0.2rem;
-  padding-top: 0.7rem;
+  padding-top: 1.7rem;
 }
 
 .homebutton {

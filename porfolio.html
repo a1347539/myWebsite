@@ -12,17 +12,19 @@
         let str = "";
 
         const languageSkill = [
-          ["Python", "Coded data structures and trained deep learning model."],
-          ["C#", "Created a tower defense game with the Unity game engine."],
-          ["Java", "Built android applications."],
-          ["HTML", "Dealt with the assignments."]
+          ["Coding", "Coded data structures and trained deep learning model. Stock too! The below is DIS.", "./image/porfolio/python_stock.png"],
+          ["Unity Game Engine", "Created a tower defense game with the Unity game engine.", "./image/porfolio/tdg.png"],
+          ["Android Studio", "Built android applications.", "./image/porfolio/myFlashCard.png"],
+          ["Building Website", "This one?"],
+          ["Guitar", "I sometimes play the guitar.", "./image/porfolio/guitar.png"]
         ];
 
         for (i = 0; i < languageSkill.length; i++) {
           item = languageSkill[i];
-          str += "<p class=\"item\">" + item[0] + "<ul style=\"padding-left: 2rem; padding-top:0.7rem\">";
+          str += "<p class=\"item\"><b>" + item[0] + "</b><ul style=\"padding-left: 2rem; padding-top:0.7rem\">";
 
-              str += "<li>" + item[1] + "</li>";
+              str += '<li>' + item[1] + "</li>";
+              str += "<img src=" + item[2] + " alt=''>";
             
           str += "</ul>";
         }
@@ -62,7 +64,7 @@
         </p>
       </div>
     </section>
-
+  
     <div class="border">
 
     <section id="info">
@@ -76,7 +78,7 @@
       </div>
 
       <div class="cell">
-        <h1>Skill Set</h1>
+        <h1>What Do I Do?</h1>
           <div>
           <h3>Programming languages</h3>
             <div id="allitem">
@@ -88,30 +90,37 @@
       </div>
 
       <div class="cell">
+        <h1>Educational background and Work Experience</h1>
 
-      <h1>Educational background and onward</h1>
-        <table width=95% >
-          <tr align="right">
-            <td> 9/2021 ~ </td> <td> Bachelor Degree in Computer Science </td> <td><a href="https://hkust.edu.hk/home" blank="_blank"> The Hong Kong University of Science and Technology </a></td>
-          </tr>
-          <tr align="right">
-            <td> 2019 - 2021 </td> <td> Associate Degree in Computer Science </td> <td> <a href="https://hkuspace.hku.hk/" target="_blank"> HKU School of Professional and Continuing Education </a></td>
-          </tr>
-          <tr align="right">
-            <td> 2018 - 2019 </td> <td> Diploma Yi Jin </td> <td> <a href="https://www.sce.hkbu.edu.hk/en/" target="_blank"> School of Continuing Education Hong Kong Baptist University </a></td>
-          </tr>
-          <tr align="right">
-            <td width="15%"> ~ 6/2016 </td> <td> British Columnbia Certificate of Graduation </td> <td> <a href="https://css.sd79.bc.ca/" target="_blank">Cowichan Secondary School </a></td>
-          </tr>
-        </table>
+        <div>
+          <table width=80% style="margin-left: auto; margin-right: auto;">
+            <tr>
+              <td> Internship at Intelligent Design Technology Limited </td> <td></td><td><a href="https://intelligentdesign.hk/english/" target="_blank"> Intelligent Design Technology Limited, Hong Kong Science Park </a></td>
+            </tr>
+            <tr>
+              <td> Bachelor Degree in Computer Science </td> <td></td><td><a href="https://hkust.edu.hk/home" target="_blank"> The Hong Kong University of Science and Technology </a></td>
+            </tr>
+            <tr>
+              <td> Associate Degree in Computer Science </td> <td></td><td> <a href="https://hkuspace.hku.hk/" target="_blank"> HKU School of Professional and Continuing Education </a></td>
+            </tr>
+            <tr>
+              <td> Diploma Yi Jin </td> <td></td><td> <a href="https://www.sce.hkbu.edu.hk/en/" target="_blank"> School of Continuing Education Hong Kong Baptist University </a></td>
+            </tr>
+            <tr>
+              <td width="40%">British Columnbia Certificate of Graduation </td> <td width=2%></td><td width="40%"> <a href="https://css.sd79.bc.ca/" target="_blank">Cowichan Secondary School </a></td>
+            </tr>
+          </table>
+          </div>
       </div>
 
       <div class="cell">
+        <div style="clear: both;"></div>
         <h1>Achievements</h1>
-        <div style="float: right; padding: 1rem 4rem 0;">
+        <div style="float: right; padding: 1rem 4rem 0; right:0">
         <img src="./image/achievement.png" alt="achievement" width="340" height="130" >
         </br><small>My proudest achievement!</small>
         </div>
+        
         <ul id="achievementlist">
           <li><b>Sekiro: Shadow dies twice</b> 100% unlocked!</li>
           <li><b>Dark souls 3</b> 100% unlocked and NG+7 completed</li>
@@ -121,7 +130,7 @@
           <li>An overall <b>score of 7.5</b> in the IELTS exam.</li>
           <li>Obtained a <b>CGPA of 3.98</b> by the end of semester 3.</li>
           <li><b>Created an actual game</b> without using any major game engine.</li>
-          <li>Awarded the <b>Outstanding Performance Scholarship.</b></li>
+          <li><b>Scholarship</b> awardee.</li>
         </ul>
       </div>
     </section>
