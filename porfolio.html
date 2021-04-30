@@ -4,34 +4,8 @@
     <link rel="stylesheet" href="./asset/porfolio.css" />
     <link rel="stylesheet" href="./asset/general.css" />
     <script src="./asset/general.js"></script>
+    <script src="./asset/porfolioList.js"></script>
 
-    <script>
-
-      let buildLandguageSkill = () => {
-
-        let str = "";
-
-        const languageSkill = [
-          ["Coding", "Coded data structures and trained deep learning model. Stock too! The below is DIS.", "./image/porfolio/python_stock.png"],
-          ["Unity Game Engine", "Created a tower defense game with the Unity game engine.", "./image/porfolio/tdg.png"],
-          ["Android Studio", "Built android applications.", "./image/porfolio/myFlashCard.png"],
-          ["Building Website", "This one?"],
-          ["Guitar", "I sometimes play the guitar.", "./image/porfolio/guitar.png"]
-        ];
-
-        for (i = 0; i < languageSkill.length; i++) {
-          item = languageSkill[i];
-          str += "<p class=\"item\"><b>" + item[0] + "</b><ul style=\"padding-left: 2rem; padding-top:0.7rem\">";
-
-              str += '<li>' + item[1] + "</li>";
-              str += "<img src=" + item[2] + " alt=''>";
-            
-          str += "</ul>";
-        }
-
-        return str;
-      }
-    </script>
   </head>
   <body onload="getClock()">
     <nav id="top">
