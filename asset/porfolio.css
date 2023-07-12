@@ -111,7 +111,10 @@ section#info table td a:hover {
   color: #000000;
   background-color: #9b9b9b;
 }
+ul {
+  padding: 1rem;
+}
 
-#achievementlist li {
+li {
   padding: 0.2rem;
 }

@@ -1,25 +1,25 @@
 const languageSkill = [
   {
-    name: "Coding",
+    name: "Machine Learning",
     des:
-      "Coded data structures and trained deep learning model. Stock too! The below is DIS.",
+      "Designed, built, and trained an MLP model to predict stock prices.",
     img: "./image/porfolio/python_stock.png",
     //video: "./image/porfolio/result.mp4",
   },
   {
-    name: "Unity Game Engine",
-    des: "Created a tower defense game with the Unity game engine.",
+    name: "Game development",
+    des: "Created a tower defense game with the Unity game engine in C#.",
     img: "./image/porfolio/tdg.png",
   },
   {
-    name: "Android Studio",
-    des: "Built android applications.",
+    name: "Mobile application development",
+    des: "Built a mobile app that provides digital flashcards for learning English",
     img: "./image/porfolio/myFlashCard.png",
   },
   { name: "Building Website", des: "This one?" },
   {
     name: "Guitar",
-    des: "I sometimes play the guitar.",
+    des: "I enjoy playing the guitar in my leisure hours.",
     img: "./image/porfolio/guitar.png",
   },
 ];
